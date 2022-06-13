@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Timer from './Timer'
 
 const orders = [100,200,300]
 // const gifts = [
@@ -95,7 +96,7 @@ function App() {
           </div>
         ))}
 
-        {state && <h1>Hello</h1>}
+        {state && <Timer></Timer>}
         <button onClick={() => setState(!state)}>Toggle</button>
       </div>
     );
